@@ -11,7 +11,7 @@ files:
   destination: /home/ec2-user/node-website/node_modules
 - source: /services
   destination: /home/ec2-user/node-website/services
-- source: /scripts/requirements.txt
+- source: /scripts
   destination: /home/ec2-user/scripts
 hooks:
   AfterInstall:
