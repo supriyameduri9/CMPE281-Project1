@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /home/ec2-user/node-website
 export NODE_ENV=production
-forever start app.js
+pm2 start app.js
