@@ -9,9 +9,9 @@ files:
   destination: /home/ec2-user/node-website/public
 - source: /node_modules
   destination: /home/ec2-user/node-website/node_modules
-- source: /services
+- source: /services/
   destination: /home/ec2-user/node-website/services
-- source: /scripts
+- source: /scripts/
   destination: /home/ec2-user/scripts
 hooks:
   AfterInstall:
