@@ -9,6 +9,8 @@ files:
   destination: /home/ec2-user/node-website/public
 - source: /node_modules
   destination: /home/ec2-user/node-website/node_modules
+- source: /services
+  destination: /home/ec2-user/node-website/services
 - source: /scripts/requirements.txt
   destination: /home/ec2-user/scripts
 hooks:
