@@ -1,0 +1,71 @@
+<div class="container-fluid">
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-text pull-right">
+				<a ng-click="model.logout()" class="btn btn-sm btn-danger">Logout</a>
+			</div>
+			<div class="navbar-text pull-right">
+				<b class="sup-navbar-text"> {{model.data.FirstName}} </b> <b
+					class="sup-navbar-text"> {{model.data.LastName}} </b> <b
+					class="sup-navbar-text"> ({{model.data.Email}}) </b>
+			</div>
+
+			<div class="navbar-text pull-left">
+				<b class="sup-navbar-text">File Service App</b>
+			</div>
+			
+			<div class="navbar-inner">
+				<b class="ad-navbar-text" ng-show="model.isAdminUser">Admin
+					View</b>
+				<b class="ad-navbar-text" ng-hide="model.isAdminUser">Non-Admin
+					View</b>	
+			</div>
+		</div>
+	</nav>
+
+	<table class="table table-responsive">
+		<thead>
+			<tr>
+				<th>Sl. No</th>
+				<th ng-show="model.isAdminUser">First name</th>
+				<th ng-show="model.isAdminUser">Last name</th>
+				<th ng-show="model.isAdminUser">Email Address</th>
+				<th>Filename</th>
+				<th>Description</th>
+				<th>Creation Time</th>
+				<th>Last Modified Time</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tbody ng-repeat="file in model.files track by $index">
+			<tr>
+				<td>{{$index + 1}}</td>
+				<td ng-show="model.isAdminUser">{{file.FirstName}}</td>
+				<td ng-show="model.isAdminUser">{{file.LastName}}</td>
+				<td ng-show="model.isAdminUser">{{file.Email}}</td>
+				<td>{{file.FileName}}</td>
+				<td>{{file.Description}}</td>
+				<td>{{file.CreationTime}}</td>
+				<td>{{file.LastModifiedTime}}</td>
+				<td><a><span ng-click="model.downloadFile(file)"
+						class="glyphicon glyphicon-download-alt green"></span></a></td>
+				<td><a><span ng-click="model.deleteFileByUser(file)"
+						class="glyphicon glyphicon-trash red"></span></a></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<form>
+		<div class="form-group">
+			<input type="file" upload-file-dir ng-model="uploadedfile">
+		</div>
+		<div class="form-group">
+			<input type="text" placeholder="Description" ng-model="uploadedfiledesc">
+			<button ng-click="model.uploadFile()">Upload</button>
+		</div>
+	</form>
+
+</div>
+
+
