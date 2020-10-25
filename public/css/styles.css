@@ -6,13 +6,18 @@
 	color: green;
 }
 
-.sup-navbar-text{
-    color: white;
+.sup-navbar-text {
+	color: white;
 }
 
-.ad-navbar-text{
-    color: white;
-    font-size: 20px;
+.ad-navbar-text {
+	color: white;
+	font-size: 20px;
+}
+
+.glyphicon:hover {
+	transform: scale(1.5);
+	color: blue;
 }
 
 .navbar {
@@ -23,10 +28,6 @@
 	height: 30px;
 }
 
-.navbar-inner{
-    text-align:center;
+.navbar-inner {
+	text-align: center;
 }
-
-
-
-

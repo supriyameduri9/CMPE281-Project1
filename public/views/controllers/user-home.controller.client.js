@@ -99,7 +99,7 @@
 		}
 
 		function logout() {
-			$window.open("https://myclouprojectsupriyameduri.com/login")
+			$window.location.href = "https://myclouprojectsupriyameduri.com/";
 		}
 
 	}
