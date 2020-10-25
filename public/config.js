@@ -19,11 +19,6 @@
 				controller: 'homeController',
 				controllerAs: 'model',
 			})
-			.when("/somepage", {
-				templateUrl: "views/templates/user-somepage.view.client.html",
-				controller: 'somePageController',
-				controllerAs: 'model',
-			})
 
 		$locationProvider.html5Mode(true);
 	}

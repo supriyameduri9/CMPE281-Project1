@@ -61,8 +61,6 @@
 			fileService
 				.uploadFile(formData)
 				.then(function(response) {
-					console.log("Received response - controller")
-					console.log(response);
 					$route.reload();
 				});
 		}
@@ -101,7 +99,7 @@
 		}
 
 		function logout() {
-			$window.open("http://localhost:3000/login")
+			$window.open("https://myclouprojectsupriyameduri.com/login")
 		}
 
 	}
@@ -113,7 +111,6 @@
 				link: function(scope, element) {
 					element.on('change', function(evt) {
 						scope.ufiles = evt.target.files
-						console.log("in dir")
 					});
 				}
 			}

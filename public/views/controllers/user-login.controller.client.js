@@ -4,8 +4,7 @@
         .controller("loginController", loginController);
 
     function loginController(fileService, $scope, $location) {
-        var view = this;
-                
+        var view = this;       
     }
     
 })();
