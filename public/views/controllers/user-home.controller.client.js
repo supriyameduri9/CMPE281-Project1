@@ -99,7 +99,7 @@
 		}
 
 		function logout() {
-			$window.location.href = "https://myclouprojectsupriyameduri.com/";
+			$window.location.href = "https://mycloudprojectsupriyameduri.com/";
 		}
 
 	}
