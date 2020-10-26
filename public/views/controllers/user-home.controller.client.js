@@ -88,7 +88,6 @@
 				.then(function(files) {
 					console.log(files);
 					if (files.length === 0) {
-						console.log("In Client - failed");
 						v.message = "No files uploaded!"
 					}
 					else {

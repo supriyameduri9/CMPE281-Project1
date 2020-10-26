@@ -14,12 +14,11 @@
 			<div class="navbar-text pull-left">
 				<b class="sup-navbar-text">File Service App</b>
 			</div>
-			
+
 			<div class="navbar-inner">
-				<b class="ad-navbar-text" ng-show="model.isAdminUser">Admin
-					View</b>
+				<b class="ad-navbar-text" ng-show="model.isAdminUser">Admin View</b>
 				<b class="ad-navbar-text" ng-hide="model.isAdminUser">Non-Admin
-					View</b>	
+					View</b>
 			</div>
 		</div>
 	</nav>
@@ -61,11 +60,10 @@
 			<input type="file" upload-file-dir ng-model="uploadedfile">
 		</div>
 		<div class="form-group">
-			<input type="text" placeholder="Description" ng-model="uploadedfiledesc">
+			<input type="text" placeholder="Description"
+				ng-model="uploadedfiledesc">
 			<button ng-click="model.uploadFile()">Upload</button>
 		</div>
 	</form>
 
 </div>
-
-

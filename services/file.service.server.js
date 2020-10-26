@@ -43,8 +43,8 @@ function listAllFiles(req, res) {
 // for users to upload files
 
 function createFile(req, res) {
-   
-    console.log(req.body.data) 
+
+	console.log(req.body.data)
 	let formdata = JSON.parse(req.body.data);
 
 	var currentTime = new Date().toString();
@@ -147,6 +147,7 @@ function deleteFile(req, res) {
 		});
 	});
 }
+
 
 // for users to see only their files
 function listFilesByUserEmail(req, res) {

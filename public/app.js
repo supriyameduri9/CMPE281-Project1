@@ -1,4 +1,4 @@
-(function(){
-    angular
-        .module("FileServiceApp",["ngRoute"]);
+(function() {
+	angular
+		.module("FileServiceApp", ["ngRoute"]);
 })();

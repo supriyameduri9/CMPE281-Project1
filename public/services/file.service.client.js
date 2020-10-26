@@ -45,8 +45,6 @@
 		}
 
 		function deleteFile(deletefile) {
-			console.log("In delete file  - client service")
-			console.log(deletefile)
 			return $http.post("/fileservice/deleteFile", deletefile)
 				.then(function(response) {
 					return response.data;
