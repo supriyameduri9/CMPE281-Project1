@@ -95,7 +95,7 @@ My SQL WorkBench
 <img width="1440" alt="Delete" src="https://user-images.githubusercontent.com/71044935/97131027-4e896c80-1700-11eb-88ae-e061e0a6608b.png">
 
 #### Delete Success:
-<img width="1440" alt="DeleteSuccess" src="https://user-images.githubusercontent.com/71044935/97130895-e9ce1200-16ff-11eb-87a4-e840ac738674.png"
+<img width="1440" alt="DeleteSuccess" src="https://user-images.githubusercontent.com/71044935/97135151-bb0a6880-170c-11eb-8a0f-967731414cd1.png">
 
 #### Admin View:
 <img width="1440" alt="AdminView" src="https://user-images.githubusercontent.com/71044935/97130911-f5213d80-16ff-11eb-874c-79a2248222e8.png">
