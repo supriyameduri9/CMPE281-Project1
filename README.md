@@ -7,7 +7,7 @@
 
 The File Service App is a web application that allows registered users to store files on the cloud and to download, update , and delete files. Hosted on the AWS cloud, it is a three-tier web framework. In order to provide a highly accessible, flexible and cost-effective solution, it is designed using different AWS resources.In addition, the program has an admin view that allows the admin user to access all files and to download or remove files.
 
-#### Application Website: myclouprojectsupriyameduri.com
+#### Application Website: https://myclouprojectsupriyameduri.com
 #### Demo Link: https://youtu.be/V-iLxDyG8mo
 
 #### Github Link : https://github.com/supriyameduri9/CMPE281-Project1/tree/master 
