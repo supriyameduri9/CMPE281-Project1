@@ -13,13 +13,9 @@ The File Service App is a web application that allows registered users to store 
 
 (Note :  I had configured AWSCodeCommit for version control but I had to switch to github in the last minute, because AWSCodeCommit doesn’t support public repository access and doesn't have an easy way to give access to users)
 
-#### Application demo:
 
 #### Architecture Diagram:
-
-
-
-
+![Architecture Diagram](https://user-images.githubusercontent.com/71044935/97132938-8941d380-1705-11eb-8434-ce48cad149db.png)
 
 #### S3 Bucket: 
 This is used to store and manage the files uploaded by each user.The storage of this bucket will be Standard S3.  Create a S3 bucket in any region and enable versioning,static web hosting properties. Using Cross region replication feature add a new rule to attach a bucket from another region.
