@@ -31,7 +31,7 @@ This is a cloud storage form of S3, we can archive the files using this service.
 This service is enabled for fast, easy and secure transfer of files.
 
 #### RDS: 
-Launch a MySQl instance and connect to the workbench where user data and corresponding files uploaded will be saved.
+Launch a MySQl instance and connect to the workbench where user data and corresponding files uploaded will be saved. I created a single-AZ RDS for the purpose of the project. However, having multi-AZ RDS deployments will help with high availability and provide failover support. Single-AZ RDS instances can be converted into a multi-AZ deployments using the aws console, either during creation of the instances or later by modifying the DB instance.
 
 #### EC2 Instance: 
 Create a EC2 instance , configure the web server to route all the api requests. Create an AMI for the EC2 instance according to the configurations.
